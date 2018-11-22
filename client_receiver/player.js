@@ -59,8 +59,8 @@ Player.prototype.setupCallbacks_ = function() {
     let method = 'requestAd';
     switch (method) {
       case 'requestAd':
-        let adTag = message[1];
-        let currentTime = parseFloat(message[2]);
+        let adTag = 'http://shadow01.yumenetworks.com/dynamic_preroll_playlist.vast2xml?domain=1552hCkaKYjg';
+        let currentTime = 1.0;
         self.requestAd_(adTag, currentTime);
         break;
       case 'seek':
