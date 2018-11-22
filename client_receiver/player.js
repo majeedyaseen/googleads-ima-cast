@@ -56,7 +56,7 @@ Player.prototype.setupCallbacks_ = function() {
   this.context_.addCustomMessageListener(NAMESPACE, (event) => {
     console.log(event.data);
     let message = event.data.split(',');
-    let method = message[0];
+    let method = 'requestAd';
     switch (method) {
       case 'requestAd':
         let adTag = message[1];
